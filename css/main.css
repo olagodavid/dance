@@ -10,8 +10,8 @@ body {
     background-color: transparent;
 }
 
-/* えりかstyle */
-/* 基準 */
+
+
 #corebody {
     position: relative;
     top: 50%;
@@ -20,7 +20,7 @@ body {
     height: 0px;
 }
 
-/* 頭部 */
+
 #head {
     position: absolute;
     top: -58px;
@@ -576,7 +576,7 @@ body {
     border-bottom: 1px solid gray;
 }
 
-/* 首 */
+
 #neck {
     position: absolute;
     top: 0px;
@@ -612,7 +612,7 @@ body {
     background-color: rgba(255, 255, 255, 1);
 }
 
-/* 右腕 */
+
 #sholder_r {
     position: absolute;
     top: -7px;
@@ -764,7 +764,7 @@ body {
     background-color: rgba(249, 219, 209, 1);
 }
 
-/* 左腕 */
+
 #sholder_l {
     position: absolute;
     top: -4px;
@@ -810,6 +810,244 @@ body {
         transparent
     );
     z-index: 120;
+}
+
+
+#upperarm_l {
+    position: absolute;
+    top: 0px;
+    left: 12px;
+    width: 12px;
+    height: 48px;
+    border-radius: 4px 4px 6px 6px;
+    -webkit-transform-origin: 6px 6px;
+    -moz-transform-origin: 6px 6px;
+    -webkit-transform: rotate(-66deg);
+    -moz-transform: rotate(-66deg);
+    background-color: rgba(251, 253, 232, 1);
+    z-index: 110;
+}
+
+#lowerarm_l {
+    position: absolute;
+    top: 36px;
+    left: -4px;
+    width: 12px;
+    height: 48px;
+    border-radius: 4px 4px 6px 6px;
+    -webkit-transform-origin: 6px 6px;
+    -moz-transform-origin: 6px 6px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(rgba(251, 253, 232, 1)),
+        color-stop(0.83, rgba(251, 253, 232, 1)),
+        color-stop(0.83, rgba(205, 118, 152, 1)),
+        color-stop(0.87, rgba(205, 118, 152, 1)),
+        color-stop(0.87, rgba(255, 255, 255, 1)),
+        color-stop(0.90, rgba(255, 255, 255, 1)),
+        color-stop(0.90, rgba(205, 118, 152, 1)),
+        to(rgba(205, 118, 152, 1))
+    );
+    background: -moz-linear-gradient(
+        top,
+        rgba(251, 253, 232, 1) 0%,
+        rgba(251, 253, 232, 1) 83%,
+        rgba(205, 118, 152, 1) 83%,
+        rgba(205, 118, 152, 1) 87%,
+        rgba(255, 255, 255, 1) 87%,
+        rgba(255, 255, 255, 1) 90%,
+        rgba(205, 118, 152, 1) 90%,
+        rgba(205, 118, 152, 1)
+    );
+}
+
+#lowerarm_l_r {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 40px;
+    border-radius: 4px 0px 0px 2px;
+    -webkit-transform-origin: 6px 6px;
+    -moz-transform-origin: 6px 6px;
+    -webkit-transform: rotate(6deg);
+    -moz-transform: rotate(6deg);
+    background-color: rgba(251, 253, 232, 1);
+}
+
+#lowerarm_l_l {
+    position: absolute;
+    top: 0px;
+    left: 6px;
+    width: 6px;
+    height: 40px;
+    border-radius: 0px 4px 2px 0px;
+    -webkit-transform-origin: 6px 6px;
+    -moz-transform-origin: 6px 6px;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    background-color: rgba(251, 253, 232, 1);
+}
+
+#hand_l {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    width: 12px;
+    height: 20px;
+    border-radius: 4px 4px 8px 4px / 4px 4px 4px 8px;
+    -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    background-color: rgba(249, 219, 209, 1);
+}
+
+#hand_l_l {
+    position: absolute;
+    top: 1px;
+    left: 8px;
+    width: 6px;
+    height: 16px;
+    border-radius: 4px 4px 8px 0px / 4px 4px 8px 0px;
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    background-color: rgba(249, 219, 209, 1);
+}
+
+
+#bust {
+    position: absolute;
+    top: -40px;
+    left: -4px;
+    width: 32px;
+    height: 44px;
+    border-radius: 4px 4px 8px 8px / 4px 4px 8px 8px;
+    -webkit-transform-origin: 50% 96%;
+    -moz-transform-origin: 50% 96%;
+    -webkit-transform: rotate(-6deg);
+    -moz-transform: rotate(-6deg);
+    background-color: rgba(251, 253, 232, 1);
+}
+
+#bust_r {
+    position: absolute;
+    top: 0px;
+    left: -3px;
+    width: 10px;
+    height: 36px;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    background-color: rgba(251, 253, 232, 1);
+    z-index: 1;
+}
+
+#bust_l {
+    position: absolute;
+    top: 0px;
+    left: 25px;
+    width: 10px;
+    height: 36px;
+    border-radius: 5px 5px 0px 0px;
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    background-color: rgba(251, 253, 232, 1);
+    z-index: 1;
+}
+
+#ribbon {
+    position: absolute;
+    top: 16px;
+    left: 13px;
+    z-index: 200;
+}
+
+#ribbon_r_upper {
+    position: absolute;
+    top: 0px;
+    left: -18px;
+}
+
+#ribbon_r_upper_1 {
+    position: absolute;
+    top: -4px;
+    left: 1px;
+    width: 18px;
+    height: 14px;
+    border-radius: 2px;
+    -webkit-transform: skew(30deg) rotate(20deg);
+    -moz-transform: skew(30deg) rotate(20deg);
+    background-color: rgba(181, 36, 91, 1);
+}
+
+#ribbon_r_upper_2 {
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    width: 18px;
+    height: 12px;
+    border-radius: 2px;
+    -webkit-transform: skew(-30deg) rotate(-15deg);
+    -moz-transform: skew(-30deg) rotate(-15deg);
+    background-color: rgba(181, 36, 91, 1);
+}
+
+#ribbon_r_lower {
+    position: absolute;
+    top: 8px;
+    left: -8px;
+}
+
+#ribbon_r_lower_1 {
+    position: absolute;
+    top: -2px;
+    left: -4px;
+    width: 7px;
+    height: 20px;
+    -webkit-transform: rotate(0deg) skew(-30deg);
+    -moz-transform: rotate(0deg) skew(-30deg);
+    background-color: rgba(181, 36, 91, 1);
+}
+
+#ribbon_r_lower_2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 7px;
+    height: 20px;
+    -webkit-transform: rotate(55deg) skew(30deg) ;
+    -moz-transform: rotate(55deg) skew(30deg) ;
+    background-color: rgba(181, 36, 91, 1);
+}
+
+#ribbon_c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 6px;
+    height: 12px;
+    background-color: rgba(181, 36, 91, 1);
+}
+
+#ribbon_l_upper {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+
+#ribbon_l_upper_1 {
+    position: absolute;
+    top: -4px;
+    left: 0px;
+    width: 18px;
+    height: 14px;
+    border-radius: 2px;
+    -webkit-transform: skew(-30deg) rotate(-20deg);
+    -moz-transform: skew(-30deg) rotate(-20deg);
+    background-color: rgba(181, 36, 91, 1);
 }
 
 
